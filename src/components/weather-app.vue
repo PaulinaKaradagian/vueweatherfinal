@@ -1,6 +1,6 @@
 <template>
 
- <div id="weather-container" :class="typeof weather.main != 'undefined' && weather.main.temp > 22 ? 'warm' : ''">
+ <div id="weather-container" :class="typeof weather.main != 'undefined' && weather.main.temp >= 22 ? 'warm' : ''">
   <div class="weather-wrap">
    <div class="search-box">
     <input type="text" placeholder="Search..." class="search-bar" 
